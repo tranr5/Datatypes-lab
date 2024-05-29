@@ -58,3 +58,10 @@ karolin[age] = 17
 
 kristyn.splice(1,1);
 // console.log(kristyn)
+
+let x = 1;
+while (x <= 10) {
+  var msg = 'Item ' + x;  
+	console.log(msg);  
+	x++;
+}
