@@ -110,24 +110,24 @@ kristyn.splice(1,1);
 //   alert("You've entered: " + words.join(', '));
 // }
 
-let color = prompt("what color is the light?")
-let reaction = ''
-if (color === "green") {
-    reaction = "gp-o"}
+// let color = prompt("what color is the light?")
+// let reaction = ''
+// if (color === "green") {
+//     reaction = "gp-o"}
 
-    else if (color === "yellow") {
-        reaction = "slow"  
-    }
+//     else if (color === "yellow") {
+//         reaction = "slow"  
+//     }
 
-    else if (color === "red") {
-        reaction = "stop"  
-    }
+//     else if (color === "red") {
+//         reaction = "stop"  
+//     }
 
-    else {
-        reaction = "pick a real color"
-    }
+//     else {
+//         reaction = "pick a real color"
+//     }
 
-console.log(reaction)
+// console.log(reaction)
 
 
 
@@ -158,7 +158,7 @@ function prompt1() {
   
   // COMMENT IN THE BELOW LINE OF CODE TO TEST YOUR OUTPUT IN THE BROWSER!
   // prompt1()
-  
+//   console.log(prompt1())
   // 🌟 MAKE A COMMIT: "Complete prompt 1"
   
   /*
@@ -168,12 +168,15 @@ function prompt1() {
    */
   
   function prompt2() {
+    for (let i=0; i<=100; i=i+2) {
+        console.log (i)
+    }
     // YOUR CODE HERE
   }
   
   // COMMENT IN THE BELOW LINE OF CODE TO TEST YOUR OUTPUT IN THE BROWSER!
   // prompt2();
-  
+//   console.log(prompt2())
   // 🌟 MAKE A COMMIT: "Complete prompt 2"
   
   /*
@@ -247,9 +250,13 @@ function prompt1() {
    *   - I found a 10. High five!
    */
   function prompt7() {
+    for (let i=0; i<=100; i+=5) {
+       
+    console.log("I found a " + i + ". High five!");
+    }
     // YOUR CODE HERE
   }
-  
+//   console.log(prompt7());
   // COMMENT IN THE BELOW LINE OF CODE TO TEST YOUR OUTPUT IN THE BROWSER!
   // prompt7()
   
@@ -268,15 +275,24 @@ function prompt1() {
    */
   
   //  define someNumber here
-  var someNumber;
+  var someNumber = Math.floor(Math.random()*100)
   
-  function prompt8() {
-    // print someNumber to the console in your function so you can see its value
-    console.log(someNumber);
+  function prompt8() {// print someNumber to the console in your function so you can see its value
+    {
+        if (someNumber < 30) {
+            console.log("thats a small no")
+        }
+        else if (someNumber >= 30 && someNumber <= 60) {
+            console.log("medium number of "+ someNumber)
+        }
+        else  {
+            console.log("too big no of " + someNumber)
+        }
+    }
   
     // YOUR CODE HERE
   }
-  
+//   console.log(prompt8());
   // COMMENT IN THE BELOW LINE OF CODE TO TEST YOUR OUTPUT IN THE BROWSER!
   // prompt8();
   
@@ -296,12 +312,19 @@ function prompt1() {
   const starWars = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
   
   function prompt9() {
-    // YOUR CODE HERE
+    for (let i=0; i< starWars.length; i++ ) {
+        if (i<= 2) {
+            console.log(i+". "+starWars[i])
+        }
+        else {
+
+        }
+    }
   }
   
   // COMMENT IN THE BELOW LINE OF CODE TO TEST YOUR OUTPUT IN THE BROWSER!
   // prompt9();
-  
+//   console.log(prompt9())
   // 🌟 MAKE A COMMIT: "Complete prompt 9"
   
   /*
@@ -313,14 +336,18 @@ function prompt1() {
   function prompt10() {
     const myArray = [];
     // YOUR CODE HERE
-  
+    for (let i = 0; i <= 100; i+=2 ) {
+        myArray.push(i)
+    }
     // don't forget to return the array after pushing the numbers into it so you can see it in the browser!
     // return the array
     return myArray;
   }
   
+
+  
   // COMMENT IN THE BELOW LINE OF CODE TO TEST YOUR OUTPUT IN THE BROWSER!
-  // console.log(prompt10());
+//   console.log(prompt10());
   
   // 🌟 MAKE A COMMIT: "Complete prompt 10"
   
@@ -360,15 +387,19 @@ function prompt1() {
     15,
     12,
   ];
-  
+//   numSort = nums.sort()
+//   console.log(mediumArray)
+
   function prompt11() {
-    let median;
+    // mediumarray is whole num that is sorted array
+    wholeArray = Math.floor(nums.sort().length)
+    let median = nums[mediumArray];  
     // YOUR CODE HERE
   
     console.log(median);
   }
   // COMMENT IN THE BELOW LINE OF CODE TO TEST YOUR OUTPUT IN THE BROWSER!
-  // prompt11();
+  console.log(prompt11())
   
   // 🌟 MAKE A COMMIT: "Complete prompt 11"
   
@@ -387,13 +418,16 @@ function prompt1() {
   
   function prompt12() {
     // YOUR CODE HERE
-  }
-  
-  // COMMENT IN THE BELOW LINE OF CODE TO TEST YOUR OUTPUT IN THE BROWSER!
-  // prompt12();
-  
+    for (let i = 1; i<= 10; i++) {
+        for (let j = 11; j <= 20; j++) {
+          console.log(`i: ${i} / j: ${j}`)
+        }
+      }
+      // YOUR CODE HERE
+    }
+    
   // 🌟 MAKE A COMMIT: "Complete prompt 12"
-  
+//   console.log(prompt12())
   /*
    * Prompt 13:
    *
